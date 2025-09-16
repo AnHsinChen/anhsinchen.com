@@ -1,0 +1,743 @@
+/* Section-specific styles */
+/* Center images and their captions */
+.content-block img {
+    display: block;
+    margin: 0 auto;
+}
+
+.image-caption {
+    text-align: center;
+    font-size: 0.89rem;
+    line-height: 1.33rem;
+    margin-top: 1rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* Custom homepage Section - Homepage specific */
+.about-section {
+    background-attachment: scroll;
+    padding: 6.67rem 0;
+    background-color: #f8f9fa;
+}
+
+.about-section .row {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about-text {
+    flex: 0 0 50%;
+    padding-right: 2rem;
+}
+
+.about-text h2 {
+    color: #0a0a14;
+    margin-bottom: 1.5rem;
+}
+
+.about-text p {
+    color: #0a0a14;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.about-image {
+    flex: 0 0 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    width: 700px;
+    height: auto;
+}
+
+/* Responsive adjustments home page*/
+@media screen and (max-width: 768px) {
+    .about-section .row {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .about-text,
+    .about-image {
+        flex: 1 1 100%;
+        padding-right: 0;
+    }
+
+    .about-image img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* case study below */
+/* Hero Section Styles */
+.hero-section {
+    background-color: #ffffff;
+    padding: 11.11rem 0 4.44rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3.56rem;
+    line-height: 4rem;
+    margin-bottom: 1.11rem;
+    color: #0a0a14;
+}
+
+.hero-subtitle {
+    font-family: "Inter", sans-serif;
+    font-size: 1.11rem;
+    line-height: 1.56rem;
+    font-weight: 500;
+    margin-bottom: 3.56rem;
+    color: #0a0a14;
+}
+
+.hero-image {
+    margin-top: 3.56rem;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Overview Section */
+.overview-section {
+    padding: 11.11rem 0 4.44rem;
+    background-color: #ffffff;
+}
+
+.overview-section .row {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.overview-content {
+    flex: 0 0 58.33%;
+}
+
+.project-details {
+    flex: 0 0 33.33%;
+}
+
+.project-details h6 {
+    font-family: "Inter", sans-serif;
+    font-size: 0.78rem;
+    line-height: 1.11rem;
+    letter-spacing: 0.056rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.89rem;
+    color: #0a0a14;
+}
+
+/* Client Section */
+.client-section {
+    padding: 0 0 8.22rem;
+    background-color: #ffffff;
+}
+
+.client-section h6 {
+    margin-bottom: 0.89rem;
+}
+
+.client-section img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Problem Section */
+.problem-section {
+    background-color: #131331;
+    color: #ffffff;
+    padding: 3.56rem 0;
+}
+
+.problem-section h2 {
+    color: #c5e2fb;
+    margin-bottom: 1.11rem;
+}
+
+.problem-section p {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+/* Research Section */
+.research-section {
+    padding: 8.22rem 0;
+    background-color: #ffffff;
+}
+
+.research-section h2 {
+    margin-bottom: 1.11rem;
+}
+
+.research-section ul {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+}
+
+.research-section li {
+    margin-bottom: 0.5rem;
+    list-style-type: disc;
+}
+
+
+
+/* Interviews Section */
+.interviews-section {
+    background-color: #f4faff;
+    padding: 8.22rem 0;
+}
+
+.interview-quote {
+    display: flex;
+    align-items: flex-start;
+    margin: 2.22rem 0;
+    padding: 1.78rem;
+    background-color: #ffffff;
+    border: 1px solid #efeff8;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 2rem;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.interview-quote blockquote {
+    font-size: 0.89rem;
+    line-height: 1.33rem;
+    margin: 0;
+    color: #0a0a14;
+}
+
+.interview-quote cite {
+    font-weight: 600;
+    font-style: normal;
+    display: block;
+    margin-top: 0.5rem;
+    color: #0a0a14;
+}
+
+/* Insights Section */
+.insights-section {
+    padding: 8.22rem 0;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.insights-section h2 {
+    margin-bottom: 1.33rem;
+}
+
+.insights-grid {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.78rem;
+    justify-content: center;
+}
+
+.insights-grid .column {
+    flex: 0 0 30%;
+}
+
+.insights-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* User Profiles Section */
+.user-profiles-section {
+    background-color: #f5f5f5;
+    padding: 8.22rem 0 3.56rem;
+}
+
+.user-profile {
+    background-color: #ffffff;
+    border: 1px solid #efeff8;
+    border-radius: 8px;
+    padding: 1.78rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.user-profile h6 {
+    font-size: 1.11rem;
+    line-height: 1.33rem;
+    margin-bottom: 0.67rem;
+    font-weight: 600;
+}
+
+.user-profile p {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.user-profile p:last-child {
+    margin-bottom: 0;
+}
+
+/* Conceptualization Section */
+.conceptualization-section {
+    padding: 8.22rem 0;
+    background-color: #ffffff;
+}
+
+/* Solution Section */
+.solution-section {
+    background-image: url('../assets/images/Solution_BG@2x.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: scroll;
+    padding: 6.67rem 0;
+    background-color: #f8f9fa;
+}
+
+.solution-section .row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.solution-text {
+    flex: 0 0 40%;
+}
+
+.solution-text h2 {
+    color: #0a0a14;
+    margin-bottom: 1.5rem;
+}
+
+.solution-text p {
+    color: #0a0a14;
+    margin-bottom: 1rem;
+}
+
+.solution-image {
+    flex: 0 0 55%;
+}
+
+.solution-image img {
+    width: 70%;
+    height: auto;
+}
+
+
+/* Feature Section with 2:1 image to text ratio */
+.feature-section.large-image .feature-video {
+    flex: 0 0 65%;
+}
+
+.feature-section.large-image .feature-text {
+    flex: 0 0 30%;
+}
+
+/* Feature Sections */
+.feature-section {
+    padding: 4.11rem 0;
+    background-color: #ffffff;
+}
+
+.feature-section .row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.feature-video {
+    flex: 0 0 40%;
+}
+
+.feature-text {
+    flex: 0 0 55%;
+}
+
+.feature-video video {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-text h2 {
+    font-size: 1.67rem;
+    line-height: 2.11rem;
+    margin-bottom: 1rem;
+    color: #0a0a14;
+}
+
+.feature-text p {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 4rem 0 6.67rem;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.contact-section h4 {
+    font-size: 1.22rem;
+    line-height: 1.78rem;
+    margin-bottom: 1rem;
+    color: #0a0a14;
+}
+
+.contact-section p {
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.contact-section a {
+    color: #de0f66;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    color: #af0c48;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2.22rem;
+}
+
+.social-links .column {
+    flex: 0 0 auto;
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+}
+
+
+/* Wireframe Gallery */
+.wireframe-gallery {
+    margin-top: 2.67rem;
+    position: relative;
+}
+
+.gallery-slide {
+    display: none;
+}
+
+.gallery-slide:first-child {
+    display: block;
+}
+
+.gallery-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Spacer utility */
+.spacer {
+    height: 1px;
+    background-color: #eeeeee;
+    margin: 1rem 0;
+}
+
+/* Image caption */
+.image-caption {
+    font-size: 0.89rem;
+    line-height: 1.33rem;
+    text-align: center;
+    margin-top: 1rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* Content blocks general styling */
+.content-block {
+    position: relative;
+    overflow: hidden;
+}
+
+.content-block img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content-block h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.content-block h6 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-size: 0.78rem;
+    margin-bottom: 1rem;
+}
+
+.content-block p {
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.content-block strong {
+    font-weight: 600;
+}
+
+/* More specific selectors to override responsive rules */
+.overview-section .container .row {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.overview-section .container .row .overview-content {
+    flex: 0 0 65% !important;
+    padding-right: 2rem;
+}
+
+.overview-section .container .row .project-details {
+    flex: 0 0 30% !important;
+    margin-left: 0 !important;
+}
+
+/* Only stack on very small screens */
+@media screen and (max-width: 480px) {
+    .overview-section .container .row {
+        flex-direction: column !important;
+    }
+
+    .overview-section .container .row .overview-content,
+    .overview-section .container .row .project-details {
+        flex: 1 1 100% !important;
+        margin-bottom: 2rem;
+        padding-right: 0;
+    }
+}
+
+/* Below is for Homepage */
+
+/* Portfolio Grid Section */
+.portfolio-grid-section {
+    padding: 4rem 0;
+    background-color: #ffffff;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.portfolio-item {
+    position: relative;
+}
+
+.portfolio-card {
+    border-radius: 12px;
+    padding: 2rem;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-content {
+    z-index: 2;
+    position: relative;
+}
+
+.portfolio-content h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #0a0a14;
+}
+
+.portfolio-content p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.portfolio-link {
+    font-size: 0.9rem;
+    color: #0a0a14;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.portfolio-link:hover {
+    color: #de0f66;
+}
+
+.portfolio-visual {
+    position: absolute;
+    top: 40%;
+    width: 80%;
+    height: 80%;
+    z-index: 1;
+}
+
+/* Homepage case study card image*/
+.portfolio-image {
+    width: 600px;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/* Mockup Styles */
+.dashboard-mockup,
+.mobile-mockup,
+.content-dashboard {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.mockup-header {
+    background: #0078d4;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mockup-logo {
+    font-weight: bold;
+}
+
+.mockup-content {
+    padding: 1rem;
+}
+
+.mockup-stats {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.stat {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0078d4;
+}
+
+.mockup-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.bar {
+    height: 8px;
+    background: #0078d4;
+    border-radius: 4px;
+}
+
+.mobile-mockup .mockup-screen {
+    padding: 1rem;
+    text-align: center;
+}
+
+.mockup-avatar {
+    width: 50px;
+    height: 50px;
+    background: #4ECDC4;
+    border-radius: 50%;
+    margin: 1rem auto;
+}
+
+.mockup-message h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.mockup-message p {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.dashboard-header {
+    background: #f8f9fa;
+    padding: 0.5rem 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.tab {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.tab.active {
+    background: #0078d4;
+    color: white;
+    border-radius: 4px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.content-item {
+    height: 60px;
+    background: #f0f0f0;
+    border-radius: 4px;
+}

@@ -1,0 +1,226 @@
+/* Navigation Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: transparent;
+    height: 6.89rem;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo svg {
+    width: 1.94rem;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover svg {
+    transform: scale(1.1);
+}
+
+/* Main Navigation */
+.standard {
+    display: flex;
+}
+
+.standard .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.standard .menu li {
+    margin: 0;
+}
+
+.standard .menu a {
+    display: block;
+    padding: 1.56rem;
+    color: #0a0a14;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.standard .menu a span {
+    font-family: "Calibre", sans-serif;
+    font-size: 0.78rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+.standard .menu a:hover span,
+.standard .menu li.current-menu-item a span {
+    color: #de0f66;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon {
+    position: relative;
+    width: 24px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-icon span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.menu-icon span::before,
+.menu-icon span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    transition: all 0.3s ease;
+}
+
+.menu-icon span::before {
+    top: -6px;
+}
+
+.menu-icon span::after {
+    bottom: -6px;
+}
+
+/* Hamburger Animation */
+.menu-icon.active span {
+    background-color: transparent;
+}
+
+.menu-icon.active span::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.menu-icon.active span::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+}
+
+/* Overlay Menu */
+#overlay-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(245, 245, 245, 0.98);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+#overlay-menu.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay-menu-inner {
+    text-align: center;
+}
+
+.overlay-nav .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.overlay-nav .menu li {
+    margin: 0;
+}
+
+.overlay-nav .menu a {
+    display: block;
+    padding: 0.89rem 0;
+    color: #0a0a14;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.overlay-nav .menu a:hover {
+    color: #de0f66;
+}
+
+/* Mobile Navigation */
+@media screen and (max-width: 768px) {
+    .standard {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar {
+        height: 5rem;
+    }
+
+    .logo svg {
+        width: 1.5rem;
+    }
+
+    .container {
+        padding: 0 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        height: 4.5rem;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .overlay-nav .menu a {
+        font-size: 1.25rem;
+        padding: 0.75rem 0;
+    }
+}

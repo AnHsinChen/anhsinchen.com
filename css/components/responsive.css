@@ -1,0 +1,389 @@
+/* Responsive Design */
+
+/* Large Screens (Desktop) */
+@media screen and (min-width: 1170px) {
+    .container {
+        padding: 0 6.67rem;
+    }
+}
+
+/* Medium Screens (Tablet - Large) */
+@media screen and (min-width: 992px) and (max-width: 1169.98px) {
+    .container {
+        padding: 0 3rem;
+    }
+
+    h1 {
+        font-size: 3.27rem;
+        line-height: 3.68rem;
+    }
+
+    h2 {
+        font-size: 2.04rem;
+        line-height: 2.25rem;
+    }
+
+    h4 {
+        font-size: 1.28rem;
+        line-height: 1.39rem;
+    }
+
+    h5 {
+        font-size: 1.11rem;
+        line-height: 1.56rem;
+    }
+
+    h6 {
+        font-size: 0.78rem;
+        line-height: 1.11rem;
+    }
+
+    .hero-section {
+        padding: 8rem 0 3rem;
+    }
+
+    .overview-section {
+        padding: 8rem 0 3rem;
+    }
+
+    .content-block {
+        padding: 3rem 0;
+    }
+}
+
+/* Small Screens (Tablet - Small) */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        padding: 0 2rem;
+    }
+
+    .row {
+        margin: 0 -10px;
+    }
+
+    .column {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 3.06rem;
+        line-height: 3.44rem;
+    }
+
+    h2 {
+        font-size: 1.96rem;
+        line-height: 2.15rem;
+    }
+
+    h4 {
+        font-size: 1.23rem;
+        line-height: 1.33rem;
+    }
+
+    h5 {
+        font-size: 1.11rem;
+        line-height: 1.56rem;
+    }
+
+    h6 {
+        font-size: 0.78rem;
+        line-height: 1.11rem;
+    }
+
+    .hero-section {
+        padding: 6rem 0 2.5rem;
+    }
+
+    .overview-section {
+        padding: 6rem 0 2.5rem;
+    }
+
+    .overview-section .row {
+        flex-direction: column;
+    }
+
+    .overview-content,
+    .project-details {
+        flex: 1 1 100%;
+        margin-left: 0;
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .solution-section .row {
+        flex-direction: column;
+    }
+
+    .solution-text,
+    .solution-image {
+        flex: 1 1 100%;
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .feature-section .row {
+        flex-direction: column;
+    }
+
+    .feature-video,
+    .feature-text {
+        flex: 1 1 100%;
+        padding-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .insights-grid .column {
+        flex: 1 1 100%;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Extra Small Screens (Mobile) */
+@media screen and (max-width: 767.98px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .row {
+        margin: 0 -10px;
+    }
+
+    .column {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 2.92rem;
+        line-height: 3.28rem;
+    }
+
+    h2 {
+        font-size: 1.87rem;
+        line-height: 2.05rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+    }
+
+    h5 {
+        font-size: 1.11rem;
+        line-height: 1.56rem;
+    }
+
+    h6 {
+        font-size: 0.78rem;
+        line-height: 1.11rem;
+    }
+
+    .hero-section {
+        padding: 5rem 0 2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.67rem;
+        line-height: 3.56rem;
+    }
+
+    .hero-subtitle {
+        margin-bottom: 2.67rem;
+    }
+
+    .overview-section {
+        padding: 4rem 0 2rem;
+    }
+
+    .overview-section .row {
+        flex-direction: column;
+    }
+
+    .overview-content,
+    .project-details {
+        flex: 1 1 100%;
+        margin-left: 0;
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .content-block {
+        padding: 2rem 0;
+    }
+
+    .problem-section,
+    .research-section,
+    .interviews-section,
+    .insights-section,
+    .conceptualization-section {
+        padding: 4rem 0;
+    }
+
+    .solution-section .row {
+        flex-direction: column;
+    }
+
+    .solution-text,
+    .solution-image {
+        flex: 1 1 100%;
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .feature-section .row {
+        flex-direction: column;
+    }
+
+    .feature-video,
+    .feature-text {
+        flex: 1 1 100%;
+        padding-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .insights-grid .column {
+        flex: 1 1 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .interview-quote {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .user-avatar {
+        margin: 0 auto 1rem;
+    }
+
+    .wireframe-gallery {
+        flex-direction: column;
+    }
+
+    .user-profile {
+        padding: 1.5rem 1rem;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .back-to-top {
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    .back-to-top a {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Very Small Screens (Small Mobile) */
+@media screen and (max-width: 543.98px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 2.77rem;
+        line-height: 3.12rem;
+    }
+
+    h2 {
+        font-size: 1.78rem;
+        line-height: 1.96rem;
+    }
+
+    h4 {
+        font-size: 1.17rem;
+        line-height: 1.27rem;
+    }
+
+    .hero-section {
+        padding: 4rem 0 1.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.67rem;
+        line-height: 3.56rem;
+    }
+
+    .overview-section {
+        padding: 3rem 0 1.5rem;
+    }
+
+    .content-block {
+        padding: 1.5rem 0;
+    }
+
+    .problem-section,
+    .research-section,
+    .interviews-section,
+    .insights-section,
+    .conceptualization-section {
+        padding: 3rem 0;
+    }
+
+    .user-profile {
+        padding: 1rem 0.5rem;
+    }
+
+    .interview-quote {
+        padding: 1rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+
+    .navbar,
+    .back-to-top,
+    #overlay-menu {
+        display: none;
+    }
+
+    .content-container {
+        margin-top: 0 !important;
+    }
+
+    .hero-section {
+        padding-top: 2rem;
+    }
+}
+
+
+
+/* Below is for homepage */
+
+/* Portfolio Grid Responsive */
+@media screen and (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .portfolio-card {
+        height: 350px;
+        padding: 1.5rem;
+    }
+
+    .portfolio-visual {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .portfolio-card {
+        height: 300px;
+        padding: 1rem;
+    }
+
+    .portfolio-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .portfolio-content p {
+        font-size: 0.8rem;
+    }
+}
